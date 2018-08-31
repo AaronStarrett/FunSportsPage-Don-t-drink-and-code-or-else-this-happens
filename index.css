@@ -10,11 +10,66 @@
 .header{
     grid-area: a;
     background: linear-gradient(to bottom, limegreen, grey);
-    height: 150px;
+    height: 100px;
+    image: url('sports.jpg');
+    position: relative;
+    z-index: 1;
+    opacity: .7;
+}
+
+#title{
+    color: limegreen;
+    text-align: center;
+    border: thick solid  skyblue; 
+    border-radius: 100px;
+    width: 500px;
+    font-size: 75px;
+    margin: 441px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;
 }
 .body{
    grid-area: d; 
     background-image: url('seattle1.jpg');
     background-size: 100%;
     height: 100vh
+}
+
+.cSection{
+grid-area: c;
+width: 135px;
+background: linear-gradient(to bottom, limegreen, grey);
+opacity: .7;
+}
+
+.fSection{
+    grid-area: f;
+    width: 135px;
+    background: linear-gradient(to bottom, limegreen, grey);
+    opacity: .7;
+    }
+.eSection{
+        grid-area: e;
+        height: 100px;
+        margin-bottom: -50px;
+        opacity: .7;
+        background: linear-gradient(to bottom, limegreen, grey);
+}
+
+#about{
+    margin: 150px;
+    margin-top: -20px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+#tickets{
+    width: 20;
+    height: 10;
+    color: red;
+    margin: 100px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
 }
