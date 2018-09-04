@@ -1,3 +1,4 @@
+
 .background{
  background: url('giphy.gif');
  background-size: 150%;
@@ -19,5 +20,4 @@
   margin-top: 50px;
   justify-content: center;
   position: relative;
-  
 }
