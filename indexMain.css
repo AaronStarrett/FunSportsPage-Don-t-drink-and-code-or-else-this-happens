@@ -1,0 +1,146 @@
+.container{
+    display:grid;
+    grid-template-areas:
+    "a a a"
+    "b b b"
+    "d d d"
+    "d d d"
+    "c c c"
+    "e e e";
+    grid-template-columns: 350px 350px 350px;
+    background-image: url('seattle1.jpg');
+   background-size: 100%;
+    background-attachment: fixed;
+    grid-row-gap: 35px;
+    grid-column-gap: 15px;
+    justify-content: center;
+}
+
+.header{
+    grid-area: a;
+    border: solid thick skyblue;
+    border-radius: 100px;
+    background: linear-gradient(to bottom, limegreen, grey);
+    width: 1075px;
+    height: 92px;
+    opacity: .5;
+    display: flex;
+}
+.navBar{
+    color: rgb(1, 1, 78);
+    font-size: 24px;
+    
+}
+a{
+    padding: 10px;
+}
+
+#title{
+    text-align: center;
+    color:rgb(1, 1, 78);
+    border: thick solid skyblue; 
+    border-radius: 0px 100px 0px 100px;
+    width: 500px;
+    margin-left: 0px;
+    margin-top: 0px;
+    font-size: 75px;
+    display:block;
+    animation: blinking .5s infinite;
+}
+@keyframes blinking{
+    0%, 33%{
+        background: limegreen;
+    }
+    34%, 66%{
+        background: skyblue;
+    } 
+    67%, 100%{
+        background-color: yellow;
+    }
+}
+
+.banner{
+    background: url("wnbaPlayoff.gif");
+    height: 50%;
+    width: 50%;
+}
+
+.content{
+   grid-area: d; 
+   background-color: lightgray;
+   border: thick solid skyblue;
+   justify-content: center;
+   flex-wrap: wrap;
+   display: flex;
+   height: 500px;
+   padding: 25px;
+  
+}
+
+.section1{
+text-align: center;
+font-size: 24px;
+background-color: gray;
+background-size: 210%;
+border: thick solid skyblue;
+display: inline-block;
+width: 30%;
+height: 90%;
+margin: auto;
+}
+.section2{
+border: thick solid skyblue;
+font-size: 24px;
+background-color: gray;
+background-size: 150%;
+display: inline-block;
+width: 30%;
+height: 90%;
+margin: auto;
+justify-content: center;
+text-align: center;
+}
+.section3{
+font-size: 24px;
+background-color: gray;
+background-size: 120%;
+border: thick solid skyblue;
+display: inline-block;
+width: 30%;
+height: 90%;
+margin: auto;
+text-align: center;
+
+
+}
+img{
+    width: 30%;
+}
+.pic1{
+    display: flex;
+    width: 330%;
+    height:49%;
+ 
+}
+.pic2{
+    display: flex;
+    width: 300%;
+    height:45%;
+    padding: 20px;
+}
+.pic3{
+    display: flex;
+    width: 300%;
+    height:45%;
+    padding: 20px;
+}
+.eSection{
+        font-size: 24px;
+        grid-area: e;
+        border: thick solid skyblue;
+        border-width: 10px;
+        height: 100px;
+        background: linear-gradient(to bottom, yellow, grey);
+        opacity: .7;
+        
+}
